@@ -25,3 +25,11 @@ penguins |>
     average_bill_length = mean(bill_length_mm, na.rm = TRUE)
   )
 ```
+
+```{r}
+#Penguin Plot 
+
+
+ggplot(data = penguins, aes(x = bill_length_mm, y = flipper_length_mm)) +
+  geom_point()
+```
